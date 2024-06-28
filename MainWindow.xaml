@@ -1,0 +1,59 @@
+﻿<Window
+    x:Class="FinalProject.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Snake Game by Zahra Khalid"
+    Width="600"
+    Height="500"
+    MinWidth="300"
+    MinHeight="350"
+    Background="{StaticResource BackgroundColor}"
+    FontFamily="{StaticResource fontStyle}"
+    Foreground="{StaticResource textColor}"
+    Icon="SnakeFeatures/icon.ico"
+    KeyDown="WindowKeyDown"
+    Loaded="WindowLoaded"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Viewbox>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock
+                x:Name="YourScore"
+                Margin="349,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="18"
+                Text="Score 0" />
+            <TextBlock
+                x:Name="HighScore"
+                Margin="10"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                FontSize="18" />
+            <Border
+                x:Name="gridOutline"
+                Grid.Row="1"
+                Margin="15,0,15,15"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                BorderBrush="{StaticResource gridLineColor}"
+                BorderThickness="1.5">
+                <UniformGrid
+                    x:Name="Gamegrid"
+                    Width="400"
+                    Height="400"
+                    Background="{StaticResource gridBackgroundColor}"
+                    SnapsToDevicePixels="True" />
+            </Border>
+
+        </Grid>
+    </Viewbox>
+
+</Window>

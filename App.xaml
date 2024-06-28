@@ -1,0 +1,34 @@
+﻿<Application
+    x:Class="FinalProject.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FinalProject"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Background color for the application window -->
+        <SolidColorBrush x:Key="BackgroundColor">#1A1A1D</SolidColorBrush>
+
+        <!-- Background color for the grid -->
+        <SolidColorBrush x:Key="gridBackgroundColor">#4E4E50</SolidColorBrush>
+
+        <!-- Color for the grid lines -->
+        <SolidColorBrush x:Key="gridLineColor">#232</SolidColorBrush>
+
+        <!-- Text color -->
+        <SolidColorBrush x:Key="textColor">#FFFFFF</SolidColorBrush>
+
+        <!-- Overlay color for various UI elements -->
+        <SolidColorBrush x:Key="overlayColor">#C3073F</SolidColorBrush>
+
+        <!-- Snake color -->
+        <SolidColorBrush x:Key="snakeColor">#950740</SolidColorBrush>
+
+        <!-- Food color -->
+        <SolidColorBrush x:Key="foodColor">#6F9FD8</SolidColorBrush>
+        <!-- Food color -->
+        <SolidColorBrush x:Key="bonusColor">#6F2FD9</SolidColorBrush>
+
+        <!-- Font style for the text -->
+        <FontFamily x:Key="fontStyle">Consolas</FontFamily>
+    </Application.Resources>
+</Application>

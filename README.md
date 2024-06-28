@@ -1,0 +1,2 @@
+# SnakeGame
+ Experience the classic Snake game in C# with a modern twist using WPF for a sleek and engaging interface. Control the snake with arrow keys to eat food and grow longer. As your score increases, bonus food appears on the grid, offering extra points. The game's speed increases with your score, adding more challenge. Navigate carefully to avoid hitting walls or your tail, and aim for the highest score in this dynamic and exciting game!
